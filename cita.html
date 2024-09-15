@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Citas - Sistema Veterinario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registrar Cita</h2>
+        <form id="appointmentForm">
+            <label for="petName">Nombre de la Mascota:</label>
+            <input type="text" id="petName" placeholder="Ingrese el nombre de la mascota" required>
+
+            <label for="appointmentDate">Fecha de la Cita:</label>
+            <input type="date" id="appointmentDate" required>
+
+            <label for="vet">Veterinario:</label>
+            <input type="text" id="vet" placeholder="Ingrese el nombre del veterinario" required>
+
+            <label for="description">Descripción de la Cita:</label>
+            <textarea id="description" placeholder="Ingrese el motivo de la cita" required></textarea>
+
+            <button type="submit">Registrar Cita</button>
+        </form>
+        <p id="appointmentMessage"></p>
+    </div>
+
+    <script src="appointment.js"></script>
+</body>
+</html>

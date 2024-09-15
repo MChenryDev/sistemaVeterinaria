@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Mascotas - Sistema Veterinario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de Mascota</h2>
+        <form id="petForm">
+            <label for="petName">Nombre de la Mascota:</label>
+            <input type="text" id="petName" placeholder="Ingrese el nombre de la mascota" required>
+
+            <label for="species">Especie:</label>
+            <input type="text" id="species" placeholder="Ej: Perro, Gato" required>
+
+            <label for="breed">Raza:</label>
+            <input type="text" id="breed" placeholder="Ingrese la raza" required>
+
+            <label for="age">Edad:</label>
+            <input type="number" id="age" placeholder="Edad en años" required>
+
+            <label for="owner">Responsable (Dueño):</label>
+            <input type="text" id="owner" placeholder="Ingrese el nombre del dueño" required>
+
+            <button type="submit">Registrar Mascota</button>
+        </form>
+        <p id="petMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
